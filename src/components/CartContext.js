@@ -1,4 +1,4 @@
-// src/contexts/CartContext.js
+// src/components/CartContext.js
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
 // Tạo Context
@@ -59,13 +59,15 @@ export const CartProvider = ({ children }) => {
 
     // Giảm số lượng sản phẩm
     const decreaseQuantity = (productId) => {
-        setCartItems((prevItems) =>
-            prevItems.map((item) =>
+        setCartItems((prevItems) => {
+            const updatedItems = prevItems.map((item) =>
                 item.id === productId
-                    ? { ...item, quantity: Math.max(1, item.quantity - 1) } // Đảm bảo số lượng không nhỏ hơn 1
+                    ? { ...item, quantity: Math.max(0, item.quantity - 1) } // Đảm bảo số lượng không âm
                     : item
-            )
-        ).filter(item => item.quantity > 0); // Xóa khỏi giỏ nếu số lượng giảm xuống 0 (tùy chọn)
+            );
+            // Lọc bỏ các sản phẩm có số lượng bằng 0
+            return updatedItems.filter(item => item.quantity > 0);
+        });
     };
 
     // Tính tổng số lượng sản phẩm trong giỏ (hiển thị trên icon giỏ hàng)
