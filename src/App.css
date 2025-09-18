@@ -42,3 +42,9 @@
   transform: translateY(-2px); /* Di chuyển lên trên một chút */
   transition: all 0.3s ease-in-out; /* Tạo hiệu ứng chuyển động mượt mà */
 }
+
+.object-title {
+  font-size: 1.5rem;   /* chữ to hơn */
+  color: #007bff;      /* xanh nước biển chuẩn Bootstrap */
+  font-weight: bold;   /* in đậm cho nổi bật */
+}

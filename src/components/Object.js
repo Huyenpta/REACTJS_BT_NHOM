@@ -12,7 +12,7 @@ const Object = () => {
               <Card className="text-center h-100">
                 <Card.Img variant="top" src={obj.image} />
                 <Card.Body>
-                  <Card.Title>{obj.title}</Card.Title>
+                  <Card.Title className="object-title">{obj.title}</Card.Title>
                   <Card.Text>{obj.description}</Card.Text>
                 </Card.Body>
               </Card>
