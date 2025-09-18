@@ -6,7 +6,7 @@ const Header = () => {
       <Container>
         <Navbar.Brand href="#home">
           <img
-            src="/images/logo.jpg"   // ✅ Gọi trực tiếp, không cần import
+            src="images/logo.jpg"  
             width="30"
             height="30"
             className="d-inline-block align-top"
