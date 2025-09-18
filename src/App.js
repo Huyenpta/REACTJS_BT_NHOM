@@ -16,7 +16,7 @@ function App() {
         {/* Banner Full Width */}
         <section className="my-0">
           <img
-            src="/images/baner-aptech.png"   // ảnh để trong public/images/
+            src="images/baner-aptech.png"   // ảnh để trong public/images/
             alt="FPT Aptech Banner"
             className="w-100 img-fluid"
             style={{ maxHeight: "auto", objectFit: "cover" }}
