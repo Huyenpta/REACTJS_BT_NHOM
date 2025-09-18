@@ -3,18 +3,18 @@
         "id": 1,
         "title": "High School Student",
         "description": "You want to pursue information technology, want to study in a professional programming training environment, with a systematic program and guaranteed output.",
-        "image": "image/highschool.png"
+        "image": "images/highschool.png"
     },
     {
         "id": 2,
         "title": "Student",
         "description": "You want to pursue information technology, want to study in a professional programming training environment, with a systematic program and guaranteed output.",
-        "image": "image/student.png"
+        "image": "images/student.png"
     },
     {
         "id": 3,
         "title": "Working",
         "description": "You want to pursue information technology, want to study in a professional programming training environment, with a systematic program and guaranteed output.",
-        "image": "image/working.png"
+        "image": "images/working.png"
     }
 ]

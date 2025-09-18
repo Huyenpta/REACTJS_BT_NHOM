@@ -1,18 +1,17 @@
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
-// import logo from '../logo-fpt-aptech.png'; // Bạn cần có file logo này
 
 const Header = () => {
   return (
     <Navbar bg="light" expand="lg" className="shadow-sm">
       <Container>
         <Navbar.Brand href="#home">
-          {/* <img
-            src={logo}
+          <img
+            src="/images/logo.jpg"   // ✅ Gọi trực tiếp, không cần import
             width="30"
             height="30"
             className="d-inline-block align-top"
             alt="FPT Aptech logo"
-          />{' '} */}
+          />{' '} 
           FPT Aptech
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
