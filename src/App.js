@@ -31,7 +31,7 @@ function App() {
         </section>
 
         {/* Subjects Section */}
-        <section className="my-5 bg-light">
+        <section className="my-5">
           <div className="container">
             <Subject />
           </div>
