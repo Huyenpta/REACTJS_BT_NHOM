@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-link-hover:hover {
+  color: #007bff !important; /* Thay đổi màu chữ khi hover */
+  transform: translateY(-2px); /* Di chuyển lên trên một chút */
+  transition: all 0.3s ease-in-out; /* Tạo hiệu ứng chuyển động mượt mà */
+}
